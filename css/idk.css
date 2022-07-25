@@ -1,0 +1,29 @@
+/*CAMBIOS A LA PAGINA DE cambios y updates
+actualizacion: igual lo linkee a Login por el padding*/
+::-webkit-scrollbar{
+width: 20px;
+height: 10px;
+}
+::-webkit-scrollbar-thumb{
+    
+    background-color:#51af51;
+}
+::-webkit-scrollbar-track{
+    background: gray;
+}
+span{
+    color:#51af51;
+
+}
+
+#CH{
+    padding-top: 20px;
+    font-size:40px;
+}
+#ContenedorCS{
+    padding: 20px 20px 20px 20px;
+}
+
+#update{
+    margin: 40px;
+}

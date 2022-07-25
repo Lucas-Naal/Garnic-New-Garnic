@@ -1,0 +1,21 @@
+form{
+    padding: 50px
+}
+::-webkit-scrollbar{
+    width: 20px;
+    height: 10px;
+    }
+    ::-webkit-scrollbar-thumb{
+        
+        background-color:#569756;
+    }
+    ::-webkit-scrollbar-track{
+        background: gray;
+    }
+    #cardH{
+        padding-top: 50px;
+    }
+    #titlecard{
+        padding-top: 50px;
+        font-size: 30px;
+    }

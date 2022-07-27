@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario Vista</title>
+
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Topbar Start -->
+  <div class="container-fluid bg-primary py-3 d-none d-md-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-white pr-3" href="">Inicio</a>
+                    <span class="text-white">|</span>
+                    <a class="text-white px-3" href="LoginMenu.html">Login</a>
+                    <span class="text-white">|</span>
+                    <a class="text-white px-3" href="PerfilUsuario.html">Perfil</a>
+                    <span class="text-white"></span>
+                    
+                    <!-- <span class="text-white">|</span>
+                    <a class="text-white px-3" href="adminMenu.html">Admin Menu</a> -->
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-white px-3" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-white px-3" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-white px-3" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-white px-3" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-white pl-3" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+
+
+<!-- Navbar Start -->
+<div class="container-fluid position-relative nav-bar p-0">
+    <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
+            <a href="index.html" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-4">Garnic</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                    <a href="adminMenu.html" class="nav-item nav-link">Admin</a>
+                    
+                </div>
+                <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+                    <h1 class="m-0 display-4">GARNIC</h1>
+                </a>
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="Helechos.html" class="nav-item nav-link">Helechos</a>
+                    <a href="Arbustos.html" class="nav-item nav-link">Arbustos</a>
+                    <!-- <a href="Regionales.html" class="nav-item nav-link">De la región</a> -->
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+    <div class=" m-4 row justify-content-center ">
+        <div class="card mb-3 bg-success" style="width: 1000px; height: 250px;">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="./img/flamboyan.jpeg" class="img-fluid rounded-start m-3" width="285px" height="450">
+              </div>
+              <div class="col-md-7">
+                <div class="text-white card-body">
+                  <h4 class="card-title  text-white" id="tituloPlanta">Flamboyan</h4>
+                  <h6 class="card-title  text-white"> Caracteristicas</h6>
+                  <p class="card-text">Altura máxima : 8 m.</p>
+                  <p class="card-text">Diámetro : 60 cm.</p> 
+                  <p class="card-text">Nombre científico:Delonix regia.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+   
+<!--Fin card 1--> 
+
+<!--Inicio Compra-->
+    <section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-4">
+					<h2 class="heading-section">Incia tu Compra</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="h5 mb-4 text-center">--------</h3>
+					<div class="table-wrap">
+						<table class="table myaccordion table-hover" id="accordion">
+						  <thead>
+						    <tr>
+						      <th>#</th>
+						      <th>Nombre de la planta</th>
+						      <th>Precio</th>
+						      <th>Cantidad</th>
+						      <th>&nbsp;</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						      <th scope="row">1</th>
+						      <td>Flamboyan</td>
+						      <td>$180.00</td>
+						      <td ><input type="number" id="valores"></td>
+						      <td>
+						      	<i class="fa" aria-hidden="true"></i>
+				        	</td>
+						    </tr>
+						    <tr> 
+						    	<td colspan="6" id="collapseOne" class="collapse show acc" data-parent="#accordion">
+						    		<p>Framboyán de Madagascar, es un árbol de la familia de las fabáceas. Es uno de los árboles más coloridos del mundo por sus flores rojas, anaranjadas, y por su follaje verde brillante puede llegar a medir hasta 12mts</p>
+						    	</td>
+						    </tr>
+						  </tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <!--Fin Compra-->
+    <a href="#" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <center><label id="Resultado"></label></center>
+    <br>
+    <center> <button type="button" onclick="calculartotal()">Calcula el total a pagar</button></center>
+    <!--<script>
+      function calculartotal()
+      {
+        var numero = document.getElementById("valores").value;
+        var resultado =180;
+        if(numero<= 0){
+          texto = "La cantidad no es valida, porfavor intente de nuevo"
+          document.getElementById("Resultado").innerHTML = texto;
+        }
+        else
+        {
+        for(var i=1; i<=numero; i++){
+          resultado = resultado*i;
+        }
+        document.getElementById("Resultado").innerHTML = `Su total a pagar es de:` +resultado;
+        }
+  
+      }
+    </script>-->
+    <br>
+    <center><a href="..." class="btn btn-secondary py-2 px-4 mt-3">Confirmar</a></center>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

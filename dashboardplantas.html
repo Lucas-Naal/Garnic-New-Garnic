@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- JavaScript Bundle with Popper -->
+    
+    
+
+</head>
+<body>
+     <!-- Topbar Start -->
+        <div class="container-fluid bg-primary py-3 d-none d-md-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-white pr-3" href="index.html">inicio</a>
+                        <span class="text-white">|</span>
+                        <a class="text-white px-3" href="">ayuda</a>
+                        <span class="text-white">|</span>
+                        <a class="text-white pl-3" href="">soporte</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        </div>
+    <!-- Topbar End -->
+ <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+        <h1 class="m-0 display-4 text-dark">Garnic</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+        <h1 class="m-0 display-4">GARNIC</h1>
+    </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="ESCRIBA AQUI" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">BUSCAR</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- navbar End -->
+    <!--PAGTAB -->
+    <ul class="bg-dark nav nav-tabs justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link text-white h4 fw-bold" href="dashboard.html">DASHBOARD</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active h4 fw-bold" aria-current="page" href="dashboardplantas.html">PLANTAS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white h4 fw-bold" href="#">USUARIOS</a>
+        </li>
+    </ul>
+    <!--PAGTAB END-->
+
+    <div class= "container-fluid ">
+       <div class="row justify-content-center">
+        
+            <button class="mt-5 col-3 btn btn-info" data-bs-toggle="modal" data-bs-target="#NuevoMod">Agregar Planta</button>
+            
+            <!-- Begin framboyan-->
+            <div class="mt-5 col-lg-10 col-md-12 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">
+                                    Framboyan</div>
+
+                            </div>
+                            <div class="col-auto">
+                                <button  data-bs-toggle="modal" data-bs-target="#Framboyan" class="btn btn-info mr-4">
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <circle cx="12" cy="12" r="2" />
+                                    <path d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7" />
+                                  </svg></button>
+                                <button class="btn btn-danger mr-4"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <line x1="18" y1="6" x2="6" y2="18" />
+                                    <line x1="6" y1="6" x2="18" y2="18" />
+                                  </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Begin Makulis-->
+            <div class="mt-1 col-lg-10 col-md-12 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">
+                                    Makulis</div>
+
+                            </div>
+                            <div class="col-auto">
+                                <button  data-bs-toggle="modal" data-bs-target="#Framboyan" class="btn btn-info mr-4">
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <circle cx="12" cy="12" r="2" />
+                                    <path d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7" />
+                                  </svg></button>
+                                <button class="btn btn-danger mr-4"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <line x1="18" y1="6" x2="6" y2="18" />
+                                    <line x1="6" y1="6" x2="18" y2="18" />
+                                  </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!--PAGINATION START -->
+                <div class="mt-5 row justify-content-center">
+                    <nav aria-label="navegacion">
+                        <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Anterior</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Siguiente</span>
+                            </a>
+                        </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            <!-- PAGINATION END-->
+
+        
+
+
+       
+        <!--inicio MODALES 1-->
+
+        <div class="modal fade" id="Framboyan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">informacion</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form> <!-- formulario -->
+
+                        <div class="row">
+                             <div class="form-group col-4">
+                                 <label for="Codigo">Codigo</label>
+                                 <input class="form-control form-input" type="text" value="FM001">
+                             </div>
+                             <div class="form-group col-8">
+                                 <label for="Nombre comun">Nombre de la Planta</label>
+                                 <input class="form-control" type="text" value="Framboyan">
+                             </div>
+                        </div>
+                         <div class="row">
+                             <div class="form-group col-6">
+                                 <label for="Nombre cientifico">Nombre cientifico</label>
+                                 <input class="form-control" type="text" value="Delonix regia">
+                             </div>
+                             <div class="form-group col-6">
+                                 <label for="familia">familia de plantas</label>
+                                 <input class="form-control" type="text" value="Fabáceas">
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <label for="Plantacion">Plantacion</label>
+                             <input class="form-control" type="text" value="Primavera">
+                         </div>
+                         <div class="form-group">
+                             <label for="Cuidados">Cuidados</label>
+                             <input class="form-control" type="text" value="Riego constante y mucho sol">
+                         </div>
+                         <div class="row justify-content-between">
+                             <div class="form-group col-4">
+                                 <label for="Precio">Precio MXN</label>
+                                 <input class="form-control" type="number" value="100">
+                             </div>
+                             <div class="form-group col-6">
+                                 <label for="Existencia">Existencia</label>
+                                 <input class="form-control" type="number" value="400">
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <label for="Descripcion">Descripcion</label>
+                             <textarea class="form-control">Framboyán de Madagascar, es un árbol de la familia de las fabáceas. Es uno de los árboles más coloridos del mundo por sus flores rojas, anaranjadas, y por su follaje verde brillante puede llegar a medir hasta 12 m</textarea>
+                         </div>
+                         
+                         <div class="input-group mb-3 ">
+                             <input type="file" class="form-control input-imag" >
+                             <label class="input-group-text" for="inputGroupFile02">Subir Imagen</label>
+                         </div>
+                     <div class="form-check" >
+                     </div>
+                 </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-info">Aceptar</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!--fin MODALES 1-->
+
+         <!--inicio MODALES 2-->
+
+         <div class="modal fade" id="NuevoMod" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Dar de alta nueva Planta</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form> <!-- formulario -->
+
+                        <div class="row">
+                             <div class="form-group col-4">
+                                 <label for="Codigo">Codigo</label>
+                                 <input class="form-control form-input" type="text" NuevoMod="">
+                             </div>
+                             <div class="form-group col-8">
+                                 <label for="Nombre comun">Nombre de la Planta</label>
+                                 <input class="form-control" type="text" placeholder="">
+                             </div>
+                        </div>
+                         <div class="row">
+                             <div class="form-group col-6">
+                                 <label for="Nombre cientifico">Nombre cientifico</label>
+                                 <input class="form-control" type="text" placeholder="">
+                             </div>
+                             <div class="form-group col-6">
+                                 <label for="familia">familia de plantas</label>
+                                 <input class="form-control" type="text" placeholder="">
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <label for="Plantacion">Plantacion</label>
+                             <input class="form-control" type="text" placeholder="">
+                         </div>
+                         <div class="form-group">
+                             <label for="Cuidados">Cuidados</label>
+                             <input class="form-control" type="text" placeholder="">
+                         </div>
+                         <div class="row justify-content-between">
+                             <div class="form-group col-4">
+                                 <label for="Precio">Precio MXN</label>
+                                 <input class="form-control" type="number" placeholder="">
+                             </div>
+                             <div class="form-group col-6">
+                                 <label for="Existencia">Existencia</label>
+                                 <input class="form-control" type="number" vaplaceholderlue="">
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <label for="Descripcion">Descripcion</label>
+                             <textarea class="form-control"></textarea>
+                         </div>
+                         
+                         <div class="input-group mb-3 ">
+                             <input type="file" class="form-control input-imag" >
+                             <label class="input-group-text" for="inputGroupFile02">Subir Imagen</label>
+                         </div>
+                     <div class="form-check" >
+                     </div>
+                 </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-info">Aceptar</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!--fin MODALES 2-->
+
+    </div>
+<!--modal end-->
+    
+        <!-- Footer Start -->
+    <div class="container-fluid footer bg-light py-5" style="margin-top: 90px;">
+        <div class="container text-center py-5">
+            <div class="row">
+                <div class="col-12 mt-2 mb-4">                    
+                    <a href="index.html" class="navbar-brand m-0">
+                        <h1 class="m-0 mt-n2 display-4 text-primary"><span class="text-secondary">GARNIC</h1>
+                    </a>                
+                </div>
+                <div class="col-12">
+                    <p class="m-0">&copy; <a href="#">GNU/GPL</a>. todos los derechos reservados a LPN
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Footer End -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <!-- <script src="/js/app.js"></script> -->
+</body>
+</html>

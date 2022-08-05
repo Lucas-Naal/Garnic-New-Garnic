@@ -141,12 +141,13 @@ function calculartotal()
         var resultado =180;
 
         if(numero<= 0){
-            texto = "La cantidad no es valida, porfavor intente de nuevo"
+            texto = "Insuficiente"
             document.getElementById("Resultado").innerHTML = texto;
         }
         else
         {
             let precio = resultado * numero;
-            document.getElementById("Resultado").innerHTML = `Su total a pagar es de: $`+precio+ '.00 Pesos';
+            document.getElementById("Resultado").innerHTML = precio+ '.00';
         }
     }
+

@@ -24,10 +24,7 @@
 </head>
 <body>
      <!-- Topbar Start -->
-    <div class="d-flex flex-row-reverse bg-primary py-3 ">
-        <button class="btn btn-dark mr-4" type="button"><a class="text-white" href="/Login.html">Login</a></button>
-        <button class="btn btn-light mr-2" type="button"><a href="/SignIn.html">Sing in</a></button>
-      </div>
+    <div class="d-flex flex-row-reverse bg-primary py-3 "></div>
       <!-- Topbar end -->
 
       <!-- Navbar Start -->
@@ -40,7 +37,8 @@
               <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                   <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+              <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+                <!--
                   <div class="navbar-nav ml-auto py-0">
                       <a href="index.html" class="nav-item nav-link active">Carrito
                       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -51,13 +49,15 @@
                         <path d="M6 5l14 1l-1 7h-13" />
                       </svg></a>
                   </div>
-                  <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+                  --->
                       <h1 class="m-0 display-4">GARNIC</h1>
-                  </a>
+                
+                  <!--
                   <div class="navbar-nav mr-auto py-0">
                       <a href="tienda.html" class="nav-item nav-link">Comprar</a>
-                      <!-- <a href="Regionales.html" class="nav-item nav-link">De la región</a> -->
+                       <a href="Regionales.html" class="nav-item nav-link">De la región</a> 
                   </div>
+                  --->
               </div>
           </nav>
       </div>
@@ -67,14 +67,15 @@
       <!-- bottombar End -->
       <!--Form Start-->
       <div id ="cardH"  class="container mt-5">
-        <div class="card  shadow-lg text-black" style="max-width:auto;">
-          <center><h1 class="mt-5">BIENVENIDO AL METODO DE PAGO</h1></center>
+        <div class="card  shadow-lg text-black" style="max: width 800px;">
+          <center><h1 class="mt-5">REALIZAR PAGO</h1></center>
       <br>
         <div class="card-body">
             <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <form>
-                    <!-- Tipo pago input -->
+                <div class="col-lg-9">
+                    <form novalidate>
+                
+                    <!-- Tipo pago input 
                         <br>
                         <br>
                     <div class="form-outline mb-4">
@@ -83,21 +84,21 @@
                           <option>Pago en efectivo</option>
                           <option>Pago con tarjeta de crédito o débito</option>
                         </select>
-                    </div>
+                    </div>-->
                     
-                    <!-- Email input-->
+                    <!-- Email input
                     <div class="form-outline mb-4">
                         <label class="form-label" for="form2Example1"> Ingresa tu Correo Electronico</label>
                       <input type="email" id="form2Example1" class="form-control" />
-                    </div>
+                    </div>-->
 
-                     <!-- Email input-->
+                     <!-- Email input
                      <div class="form-outline mb-4">
                         <label class="form-label" for="form2Example1"> Telefono</label>
                       <input type="text" id="form2Example1" class="form-control" />
-                    </div>
+                    </div>-->
 
-                      <!-- Email input-->
+                      <!-- Email input
                       <div class="form-outline mb-4">
                         <label class="form-label" for="form2Example1"> Direccion</label>
                       <input type="text" id="form2Example1" class="form-control" />
@@ -109,13 +110,154 @@
                     <div class="form-outline mb-4">
                         <label class="form-label" for="form2Example1"> Estado</label>
                       <input type="text" id="form2Example1" class="form-control" />
-                    </div>
-                    
+                    </div>-->
 
-                    <!-- Submit button -->
-                    <button type="button" class="btn btn-primary btn-block mb-4">Pagar</button>
-                    
-                
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input id="nombre" type="text" class="form-control" placeholder="Luis" required checked>
+                            <div class="invalid-feedback">Es necesario llenar los campos.</div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="apellidos" class="form-label">Apellidos</label>
+                            <input id="apellidos" type="text" class="form-control" placeholder="Naal Pacheco" required checked>
+                            <div class="invalid-feedback">Es necesario llenar los campos.</div>
+                        </div>
+
+                        <div class="col-sm-12 py-2">
+                            <label for="username" class="form-label">Telefono</label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-file" viewBox="0 0 16 16">
+                                        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                                      </svg>
+                                </span>
+                                <input id="username" type="text" class="form-control" placeholder="9992453081" required>
+                            </div>
+                            <div class="invalid-feedback">Es necesario llenar los campos.</div>
+                        </div>
+                        <div class="form-outline col-sm-4 py-2">
+                            <label for="sel1">Pais:</label>
+                            <select class="form-control" id="sel1">
+                              <option id="opcion">Opciones...</option>
+                              <option id="mexico">México</option>
+                              <option id="colombia">Colombia</option>
+                              <option id="peru">Perú</option>
+                              <option id="argentina">Argentina</option>
+                              <option id="chile">Chile</option>
+                            </select>
+                        </div>
+
+                        <div class="form-outline col-sm-4 py-2">
+                            <label for="sel2">Ciudad:</label>
+                            <select class="form-control" id="sel2">
+                              <option id="opcion">Opciones...</option>
+                              <option id="merida">Mérida</option>
+                              <option id="bogota">Bogotá</option>
+                              <option id="lima">Lima</option>
+                              <option id="buenos_aires">Buenos Aires</option>
+                              <option id="santiagoCH">Santiago de Chile</option>
+                              <option id="df">México DF</option>
+                            </select>
+                        </div>
+                        <div class="form-outline col-sm-4 py-2">
+                            <label for="sel2">Codigo Postal:</label>
+                            <input id="nombre" type="text" class="form-control" placeholder="97254">
+                            <div class="invalid-feedback">Es necesario llenar los campos.</div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table mt-4 ">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Código</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th><button type="button" class="btn btn-light" onclick="calculartotal()">Total</button></th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Flamboyan</td>
+                                        <td>2022100</td>
+                                        <td>180.00</td>
+                                        <td><input type="number" id="valores" class="form-control col-sm-2 "></td>
+                                        <td><label id="Resultado"></label></td>
+                                    </tr>  
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <hr class="my-2">
+                       <!--Inicio metodo de pago-->
+
+                    <h5 class="py-4">Pago</h5>
+                    <div class="form-check">
+                        <input type="radio" id="tarjeta1" class="form-check-input" name ="metodoP"checked required>
+                        <label for="tsrjeta1">Tarjeta de  Crédito</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" id="tarjeta1" class="form-check-input" name ="metodoP" checked required>
+                        <label for="tsrjeta1">Tarjeta de  Débito</label>
+                    </div> 
+                    <!---METODO PAGO TARJETA--> 
+                    <div class="panel panel-default" >
+                        <div class="panel-heading">
+                            
+                             <div class="row ">
+                                     <div class="col-md-12">
+                                         <input type="text" class="form-control" placeholder="Ingresa numero de tarjeta" />
+                                     </div>
+                                 </div>
+                            <div class="row ">
+                                     <div class="col-md-3 col-sm-3 col-xs-3 py-2">
+                                         <span class="help-block text-muted small-font" > Mes de Expiración</span>
+                                         <input type="text" class="form-control" placeholder="MM" />
+                                     </div>
+                                <div class="col-md-3 col-sm-3 col-xs-3 py-2">
+                                         <span class="help-block text-muted small-font" > Año de Expiración </span>
+                                         <input type="text" class="form-control" placeholder="YY" />
+                                     </div>
+                               <div class="col-md-3 col-sm-3 col-xs-3 py-2">
+                                         <span class="help-block text-muted small-font" >  CCV</span>
+                                         <input type="text" class="form-control" placeholder="CCV" />
+                                     </div>
+                                <div class="col-md-3 col-sm-3 col-xs-3">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="60" height="80" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                                       <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                                       <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                                     </svg>
+                                </div>
+                                 </div>
+                            <div class="row ">
+                                     <div class="col-md-12 pad-adjust py-3">
+                       
+                                         <input type="text" class="form-control" placeholder="Nombre de la tarjeta" />
+                                     </div>
+                                 </div>
+                            <div class="row">
+                       <div class="col-md-12 pad-adjust py-2">
+                           <div class="checkbox">
+                           <label>
+                             <input type="checkbox" checked class="text-muted"> Guardar cambios
+                           </label>
+                         </div>
+                       </div>
+                            </div>
+                              <div class="row ">
+                                   <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+                                    <a href="usuario.html"><button type="button" class="btn btn-danger">Cancelar</button></a>
+                                     </div>
+                                     <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+                                         <input type="submit"  class="btn btn-primary btn-block" value="Pagar Ahora" />
+                                     </div>
+                                 </div>
+                            
+                                          </div>
+                                     </div>  
+
+                    <!--Fin metodo de pago-->
                     </form>
                 </div>
             </div>
@@ -147,5 +289,8 @@
         </div>
     </div>
     <!-- Footer End -->
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
 </body>
 </html>
